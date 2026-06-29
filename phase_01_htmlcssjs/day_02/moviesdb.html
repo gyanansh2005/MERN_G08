@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            border: red 2px solid;
+            height:100vh;
+            width:100%;
+        }
+
+        #formContainer{
+            width:30%;
+            border:2px solid black;
+            padding: 20px;
+        }
+        #formContainer div{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom:5px ;
+        }
+        button{
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="formContainer">
+            <div>
+                <label for="">Movie Image Url</label>
+                <input type="text" placeholder="Enter image url">
+            </div>
+            <div>
+                <label for="">Movie Title</label>
+                <input type="text" placeholder="Enter Title">
+            </div>
+            <div>
+                <label for="">Movie Rating</label>
+                <input type="text" placeholder="Enter Rating">
+            </div>
+            <button>Submit</button>
+        </div>
+
+
+
+        <div>
+
+        </div>
+    </div>
+</body>
+</html>
