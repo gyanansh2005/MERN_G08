@@ -4,53 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #container{
-            border: red 2px solid;
-            height:100vh;
-            width:100%;
-        }
-
-        #formContainer{
-            width:30%;
-            border:2px solid black;
-            padding: 20px;
-        }
-        #formContainer div{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-bottom:5px ;
-        }
-        button{
-            padding: 20px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./moviesdb.css">
 </head>
 <body>
     <div id="container">
         <div id="formContainer">
-            <div>
-                <label for="">Movie Image Url</label>
-                <input type="text" placeholder="Enter image url">
-            </div>
-            <div>
+            <!-- Form -->
+             <div>
+                <label for="">Movie Image URL</label>
+                <input id="url" type="text" placeholder="Enter image url">
+             </div>
+             <div>
                 <label for="">Movie Title</label>
-                <input type="text" placeholder="Enter Title">
-            </div>
-            <div>
+                <input id="title" type="text" placeholder="Enter Title">
+             </div>
+             <div>
                 <label for="">Movie Rating</label>
-                <input type="text" placeholder="Enter Rating">
-            </div>
-            <button>Submit</button>
+                <input id="rating" type="text" placeholder="Enter Rating">
+             </div>
+             <div>
+                <button id="submit">Submit</button>
+             </div>
         </div>
 
-
-
-        <div>
+        <div id="movieCards">
+            <!-- MovieCards -->
+            
 
         </div>
     </div>
 </body>
 </html>
+<script src="./moviesdb.js"></script>
