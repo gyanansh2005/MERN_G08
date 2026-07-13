@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Callbacks</h1>
+</body>
+</html>
+<script>
+    // function greetMessage(callbck){
+    //     console.log("Welcome to Chitkara")
+    //     callbck()
+    // }
+    // function callbck(){
+    //     console.log("Good Morning")
+    // }
+
+    // greetMessage(callbck)
+
+    function makePayment(packOrder){
+        console.log("Payment is getting started..")
+        setTimeout(function(){
+            console.log("Payment is completed")
+        },3000)
+    }
+
+    function packOrder(deliverOrder){
+        console.log("Order is getting packed")
+        setTimeout(function(){
+            console.log("Order is Packed")
+        },3000)
+        }
+
+    function deliverOrder(openBox){
+        console.log("Delivery partner is gettin assigned..")
+        setTimeout(function(){
+            console.log("Order is dispatched")
+        },3000)
+    }
+
+    function openBox(makePayment){
+        console.log("Sending Otp to user...")
+        setTimeout(function(){
+            console.log("Otp matched")
+        },3000)
+    }
+
+    makePayment(function(){
+        packOrder(function(){
+            deliverOrder(function(){
+                openBox()
+            })
+        })
+    })
+
+    
+</script>
+<!-- A fn which is passed as an argument is called callback function -->
